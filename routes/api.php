@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/login','API\AuthController@postLogin');
 Route::post('/register','API\AuthController@postRegister');
+Route::post('/getCabs','API\CabController@getCabs');
 
