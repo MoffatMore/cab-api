@@ -46,7 +46,7 @@ class AuthController extends Controller
                         return response()->json([
                             'name'         => $user->name,
                             'email'        => $user->email,
-                            'level'        => $user->level,
+                            'model_type'        => $user->model_type,
                             'access_token' => $this->apiToken
                         ]);
                     }
@@ -96,7 +96,7 @@ class AuthController extends Controller
                     'name'         => $request->name,
                     'email'        => $request->email,
                     'cell_no'      => $request->cell_no,
-                    'model_type'        => $request->model_type,
+                    'model_type'   => $request->model_type,
                     'access_token' => $this->apiToken
                 ]);
             } else {
