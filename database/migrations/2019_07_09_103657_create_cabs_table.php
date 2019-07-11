@@ -19,6 +19,7 @@ class CreateCabsTable extends Migration
             $table->String('distance');
             $table->String('plate_number')->unique();
             $table->String('rating');
+            $table->String('price');
             $table->String('lat');
             $table->String('long');
             $table->timestamps();

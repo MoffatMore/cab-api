@@ -11,6 +11,7 @@ class Cab extends Model
         'distance',
         'plate_number',
         'rating',
+        'price',
         'lat',
         'long'
     ];

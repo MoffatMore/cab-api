@@ -20,8 +20,8 @@ class CabController extends Controller
 
         $earth_radius = 6371;
 
-        $dLat = deg2rad($latitude2 - $latitude1);
-        $dLon = deg2rad($longitude2 - $longitude1);
+        $dLat = deg2rad(floatval($latitude2) - floatval($latitude1));
+        $dLon = deg2rad(floatval($longitude2) - floatval($longitude1));
 
         $a = sin($dLat / 2) * sin($dLat / 2) + cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * sin($dLon / 2) * sin($dLon / 2);
         $c = 2 * asin(sqrt($a));
@@ -35,17 +35,17 @@ class CabController extends Controller
     {
 
         $cabs = Cab::all();
-        $latitude = $request->lat;
-        $longitude = $request->long;
+        $latitude = floatval($request->lat);
+        $longitude = floatval($request->long);
 
         foreach ($cabs as $cab) {
 
-            $distance = $this->getDistance($latitude, $longitude, $cab->lat, $cab->long);
-            $cab->distance = $distance;
+            $dist = $this->getDistance($cab->lat, $cab->long,$latitude, $longitude);
+            $cab->distance = $dist;
             $cab->save();
         }
 
-        return response()->json(['cabs' => $cabs]);
+        return response()->json($cabs);
     }
 
 
