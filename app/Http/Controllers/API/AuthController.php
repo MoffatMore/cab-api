@@ -46,6 +46,7 @@ class AuthController extends Controller
                         return response()->json([
                             'name'         => $user->name,
                             'email'        => $user->email,
+                            'cell_no'        => $user->cell_no,
                             'model_type'        => $user->model_type,
                             'access_token' => $this->apiToken
                         ]);
