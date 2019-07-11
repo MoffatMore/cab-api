@@ -6,9 +6,11 @@ use App\Http\Controllers\Controller;
 use DB;
 use App\User;
 use Validator;
+
 class AuthController extends Controller
 {
     private $apiToken;
+
     public function __construct()
     {
         // Unique Token

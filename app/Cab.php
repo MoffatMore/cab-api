@@ -12,7 +12,9 @@ class Cab extends Model
         'plate_number',
         'rating',
         'price',
+        'status',
         'lat',
-        'long'
+        'long',
+        'status'
     ];
 }
