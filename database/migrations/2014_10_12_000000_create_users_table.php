@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('api_token');
             $table->string('cell_no')->unique();
-            $table->string('level');
+            $table->integer('model_type');
             $table->rememberToken();
             $table->timestamps();
         });

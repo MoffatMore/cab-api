@@ -85,7 +85,7 @@ class AuthController extends Controller
                 'email'     => $request->email,
                 'password'  => bcrypt($request->password),
                 'cell_no'   => $request->cell_no,
-                'level'     => $request->level,
+                'model_type'     => $request->model_type,
                 'api_token' => $this->apiToken
             ];
             // $user = User::GetInsertId($postArray);
@@ -96,7 +96,7 @@ class AuthController extends Controller
                     'name'         => $request->name,
                     'email'        => $request->email,
                     'cell_no'      => $request->cell_no,
-                    'level'        => $request->level,
+                    'model_type'        => $request->model_type,
                     'access_token' => $this->apiToken
                 ]);
             } else {
