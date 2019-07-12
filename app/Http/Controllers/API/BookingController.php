@@ -15,7 +15,7 @@ class BookingController extends Controller
 
         $cab = Cab::where([
             'plate_number'=>$request->plate_number
-        ])->get();
+        ])->first();
 
         if ($cab && $cab->status){
             $array = [
