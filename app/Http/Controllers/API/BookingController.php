@@ -17,7 +17,7 @@ class BookingController extends Controller
             'plate_number'=>$request->plate_number
         ])->get();
 
-        if ($cab && $cab->status == 1){
+        if ($cab && $cab->status){
             $array = [
                 'user_id'=>$request->user_id,
                 'plate_number'=>$request->plate_number,
