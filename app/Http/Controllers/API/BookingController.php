@@ -37,4 +37,22 @@ class BookingController extends Controller
 
         }
     }
+
+    public function checkBooking(Request $request){
+
+        $booking = Booking::where([
+            'user_id'=>$request->id,
+            'cab_plate_number'=>$request->plate_number
+        ]);
+        if ($booking){
+
+            return response()->json([
+                'success'=>true
+            ]);
+        }
+        return response()->json([
+            'success'=>false
+        ]);
+
+    }
 }

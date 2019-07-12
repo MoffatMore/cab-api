@@ -22,4 +22,5 @@ Route::post('/login','API\AuthController@postLogin');
 Route::post('/register','API\AuthController@postRegister');
 Route::post('/getCabs','API\CabController@getCabs');
 Route::post('/requestCab','API\BookingController@requestCab');
+Route::post('/checkBooking','API\BookingController@checkBooking');
 
