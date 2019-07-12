@@ -21,4 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/login','API\AuthController@postLogin');
 Route::post('/register','API\AuthController@postRegister');
 Route::post('/getCabs','API\CabController@getCabs');
+Route::post('/requestCab','API\BookingController@requestCab');
 
