@@ -9,7 +9,7 @@ class Booking extends Model
     //
     protected $fillable = [
        'user_id',
-        'cab_plate_number',
+        'plate_number',
         'booking_date'
     ];
 }

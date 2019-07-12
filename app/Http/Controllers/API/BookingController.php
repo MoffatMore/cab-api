@@ -42,7 +42,7 @@ class BookingController extends Controller
 
         $booking = Booking::where([
             'user_id'=>$request->id,
-            'cab_plate_number'=>$request->plate_number
+            'plate_number'=>$request->plate_number
         ])->first();
         if ($booking && $booking->count() > 0){
 
