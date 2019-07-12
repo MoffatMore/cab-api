@@ -44,7 +44,7 @@ class BookingController extends Controller
             'user_id'=>$request->id,
             'cab_plate_number'=>$request->plate_number
         ]);
-        if ($booking){
+        if ($booking && $booking->count() > 0){
 
             return response()->json([
                 'success'=>true
