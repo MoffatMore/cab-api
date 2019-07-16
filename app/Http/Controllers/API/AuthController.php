@@ -165,11 +165,11 @@ class AuthController extends Controller
      */
     public function postLogout(Request $request)
     {
-        $token = $request->header('Authorization');
-        $user = User::where('api_token',$token)->first();
+        $token = $request->id;
+        $user = User::find($request->id)->first();
         if($user) {
             $postArray = ['api_token' => null];
-            $logout = User::where('id',$user->id)->update($postArray);
+            $logout = User::where('id',$request->id)->update($postArray);
             if($logout) {
                 return response()->json([
                     'success' => true,

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78459d19-ae40-4630-8b73-ec1064705974" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="178" column="37" lean-forward="true" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
+            <state relative-caret-position="70">
+              <caret line="168" column="50" lean-forward="true" selection-start-line="168" selection-start-column="50" selection-end-line="168" selection-end-column="50" />
               <folding>
                 <element signature="e#43#55#0#PHP" expanded="true" />
                 <element signature="e#2117#3627#0#PHP" />
@@ -321,12 +320,12 @@
       <updated>1562658537090</updated>
       <workItem from="1562658539273" duration="11922000" />
       <workItem from="1562826729582" duration="2501000" />
-      <workItem from="1563267915313" duration="2967000" />
+      <workItem from="1563267915313" duration="3422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22261000" />
+    <option name="totallyTimeSpent" value="22716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -487,14 +486,14 @@
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="178" column="37" lean-forward="true" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
+        <state relative-caret-position="70">
+          <caret line="168" column="50" lean-forward="true" selection-start-line="168" selection-start-column="50" selection-end-line="168" selection-end-column="50" />
           <folding>
             <element signature="e#43#55#0#PHP" expanded="true" />
             <element signature="e#2117#3627#0#PHP" />
