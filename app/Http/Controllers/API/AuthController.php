@@ -139,7 +139,7 @@ class AuthController extends Controller
             if($user) {
                 $array = [
                     'name'=>$request->name,
-                    'plate_number'=>$request->plate_number,
+                    'plate_number'=>$request->plateNumber,
                 ];
                 $cab = Cab::insert($array);
 
