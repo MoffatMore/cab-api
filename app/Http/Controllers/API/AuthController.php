@@ -172,12 +172,12 @@ class AuthController extends Controller
             $logout = User::where('id',$user->id)->update($postArray);
             if($logout) {
                 return response()->json([
-                    'message' => 'User Logged Out',
+                    'success' => true,
                 ]);
             }
         } else {
             return response()->json([
-                'message' => 'User not found',
+                'success' => false,
             ]);
         }
     }
