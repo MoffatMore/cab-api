@@ -25,3 +25,9 @@ Route::post('/logout','API\AuthController@postLogout');
 Route::post('/getCabs','API\CabController@getCabs');
 Route::post('/requestCab','API\BookingController@requestCab');
 Route::post('/checkBooking','API\BookingController@checkBooking');
+
+//Todo
+Route::post('/userRquests','API\CabController@getUserRequests');
+Route::post('/updateMyLocation','API\CabController@updateMyLocation');
+
+
