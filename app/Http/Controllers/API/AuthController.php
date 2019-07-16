@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\API;
+use App\Cab;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
@@ -101,6 +102,57 @@ class AuthController extends Controller
                     'model_type'   => $request->model_type,
                     'access_token' => $this->apiToken
                 ]);
+            } else {
+                return response()->json([
+                    'message' => 'Registration failed, please try again.',
+                ]);
+            }
+        }
+    }
+
+    public function cabRegister(Request $request)
+    {
+        // Validations
+        $rules = [
+            'name'     => 'required|min:3',
+            'email'    => 'required|unique:users,email',
+            'password' => 'required|min:8'
+        ];
+        $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails()) {
+            // Validation failed
+            return response()->json([
+                'message' => $validator->messages(),
+            ]);
+        } else {
+            $postArray = [
+                'name'      => $request->name,
+                'email'     => $request->email,
+                'password'  => bcrypt($request->password),
+                'cell_no'   => $request->cell_no,
+                'model_type'     => $request->model_type,
+                'api_token' => $this->apiToken
+            ];
+            // $user = User::GetInsertId($postArray);
+            $user = User::insert($postArray);
+
+            if($user) {
+                $array = [
+                    'name'=>$request->name,
+                    'plate_number'=>$request->plate_number,
+                ];
+                $cab = Cab::insert($array);
+
+                if ($cab){
+                    return response()->json([
+                        'name'         => $request->name,
+                        'email'        => $request->email,
+                        'cell_no'      => $request->cell_no,
+                        'model_type'   => $request->model_type,
+                        'access_token' => $this->apiToken
+                    ]);
+                }
+
             } else {
                 return response()->json([
                     'message' => 'Registration failed, please try again.',

@@ -16,13 +16,13 @@ class CreateCabsTable extends Migration
         Schema::create('cabs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('name');
-            $table->String('distance');
+            $table->String('distance')->nullable();;
             $table->String('plate_number')->unique();
-            $table->String('rating');
-            $table->String('price');
+            $table->String('rating')->nullable();
+            $table->String('price')->nullable();;
             $table->boolean('status')->default(1);
-            $table->String('lat');
-            $table->String('long');
+            $table->String('lat')->nullable();;
+            $table->String('long')->nullable();;
             $table->timestamps();
         });
     }
