@@ -27,7 +27,7 @@ Route::post('/requestCab','API\BookingController@requestCab');
 Route::post('/checkBooking','API\BookingController@checkBooking');
 
 //Todo
-Route::post('/userRquests','API\CabController@getUserRequests');
+Route::post('/userRquests','API\BookingController@getUserRequests');
 Route::post('/updateMyLocation','API\CabController@updateMyLocation');
 
 
