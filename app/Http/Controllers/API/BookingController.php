@@ -55,4 +55,12 @@ class BookingController extends Controller
         ]);
 
     }
+
+    public function getUserRequests(Request $request){
+        $booking = Booking::where([
+            'plate_number'=>$request->plate_number
+        ])->get();
+
+        return $booking;
+    }
 }
