@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Booking;
 use App\Cab;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -59,12 +60,12 @@ class BookingController extends Controller
     public function getUserRequests(Request $request){
         $bookings = Booking::where([
             'plate_number'=>$request->plate_number
-        ])->with('user')->get();
+        ])->get();
 
 
         foreach ($bookings as $booking){
-
-
+            $user = User::find($booking->user_id);
+            $bookings['user_id'] = $user;
         }
 
         return $bookings;
