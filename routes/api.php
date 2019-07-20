@@ -28,6 +28,7 @@ Route::post('/checkBooking','API\BookingController@checkBooking');
 
 //Todo
 Route::post('/userRquests','API\BookingController@getUserRequests');
-Route::post('/updateMyLocation','API\CabController@updateMyLocation');
+Route::post('/getPlateNumber','API\BookingController@getPlateNumber');
+Route::post('/updateMyLocation','API\BookingController@updateMyLocation');
 
 

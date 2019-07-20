@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78459d19-ae40-4630-8b73-ec1064705974" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cab.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cab.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/BookingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_09_103657_create_cabs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_09_103657_create_cabs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +22,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="410">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CabController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+              <folding>
+                <element signature="e#44#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/BookingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="396">
+              <caret line="66" column="34" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="34" />
               <folding>
                 <element signature="e#44#60#0#PHP" expanded="true" />
               </folding>
@@ -97,8 +113,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_11_064410_create_bookings_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_09_103657_create_cabs_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_09_103657_create_cabs_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/API/BookingController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
       </list>
@@ -214,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,19 +272,12 @@
             <path>
               <item name="cab-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="cab-api" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cab-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cab-api" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,18 +322,19 @@
       <workItem from="1562826729582" duration="2501000" />
       <workItem from="1563267915313" duration="3632000" />
       <workItem from="1563294494092" duration="1587000" />
-      <workItem from="1563347275383" duration="514000" />
+      <workItem from="1563347275383" duration="1283000" />
+      <workItem from="1563487836345" duration="579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25027000" />
+    <option name="totallyTimeSpent" value="26375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -338,7 +349,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.52611464" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.24585988" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -420,16 +431,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_10_063505_add_api_token_user_table.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CabController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_11_064410_create_bookings_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -437,10 +438,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_103657_create_cabs_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CabController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="675">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding>
+            <element signature="e#44#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,10 +479,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_103657_create_cabs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/BookingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="396">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
           </folding>
@@ -487,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="410">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
         </state>
       </provider>
     </entry>

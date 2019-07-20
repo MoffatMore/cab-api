@@ -16,6 +16,7 @@ class CreateCabsTable extends Migration
         Schema::create('cabs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('name');
+            $table->String('user_id')->unique();
             $table->String('distance')->nullable();;
             $table->String('plate_number')->unique();
             $table->String('rating')->nullable();

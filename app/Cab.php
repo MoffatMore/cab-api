@@ -9,6 +9,7 @@ class Cab extends Model
     protected $fillable = [
         'name',
         'distance',
+        'user_id',
         'plate_number',
         'rating',
         'price',
