@@ -12,4 +12,9 @@ class Booking extends Model
         'plate_number',
         'booking_date'
     ];
+
+    public function user(){
+
+        return $this->hasMany('App\User');
+    }
 }

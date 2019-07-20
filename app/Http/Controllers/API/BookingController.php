@@ -57,11 +57,17 @@ class BookingController extends Controller
     }
 
     public function getUserRequests(Request $request){
-        $booking = Booking::where([
+        $bookings = Booking::where([
             'plate_number'=>$request->plate_number
-        ])->get();
+        ])->with('user')->get();
 
-        return $booking;
+
+        foreach ($bookings as $booking){
+
+
+        }
+
+        return $bookings;
     }
 
     public function getPlateNumber(Request $request){
