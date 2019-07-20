@@ -65,7 +65,7 @@ class BookingController extends Controller
 
         foreach ($bookings as $booking){
             $user = User::find($booking->user_id);
-            $bookings->user_id = $user;
+            $booking['user_id'] = $user;
         }
 
         return $bookings;
