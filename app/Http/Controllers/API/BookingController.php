@@ -65,7 +65,7 @@ class BookingController extends Controller
     }
 
     public function getPlateNumber(Request $request){
-        $cab = Cab::find($request->id)->first();
+        $cab = Cab::find($request->id);
         if ($cab){
             return response()->json([
                 'plate_number'=>$cab->plate_number
