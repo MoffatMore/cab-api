@@ -58,10 +58,10 @@ class BookingController extends Controller
     }
 
     public function getUserRequests(Request $request){
+
         $bookings = Booking::where([
             'plate_number'=>$request->plate_number
         ])->get();
-
 
         foreach ($bookings as $booking){
             $user = User::find($booking->user_id);
@@ -72,10 +72,30 @@ class BookingController extends Controller
     }
 
     public function getPlateNumber(Request $request){
+
         $cab = Cab::where('user_id',$request->id)->first();
+
         if ($cab){
             return response()->json([
                 'plate_number'=>$cab->plate_number
+            ]);
+        }
+    }
+
+    public function acceptBooking(Request $request){
+
+        $booking = Booking::find($request->id)->update([
+            'status'=>'booked'
+        ]);
+
+        if ($booking){
+
+            return response()->json([
+                'success'=>'Successfully approved booking'
+            ]);
+
+            return response()->json([
+                'success'=>"Could'nt approve booking."
             ]);
         }
     }

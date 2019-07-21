@@ -17,6 +17,7 @@ class CreateBookingsTable extends Migration
             $table->bigInteger('id',true, true);
             $table->String('user_id');
             $table->String('plate_number');
+            $table->String('status');
             $table->String('booking_date');
             $table->timestamps();
         });

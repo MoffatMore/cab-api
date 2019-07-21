@@ -30,5 +30,5 @@ Route::post('/checkBooking','API\BookingController@checkBooking');
 Route::post('/userRquests','API\BookingController@getUserRequests');
 Route::post('/getPlateNumber','API\BookingController@getPlateNumber');
 Route::post('/updateMyLocation','API\BookingController@updateMyLocation');
-
+Route::post('/updateMyLocation','API\BookingController@acceptBooking');
 
